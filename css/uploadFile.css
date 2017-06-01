@@ -1,0 +1,18 @@
+.dragupload-container{display: block;padding: 0 20px;border: 3px dashed #CCC;margin: 20px;border-radius: 10px;cursor: pointer;}
+.dragupload-container:hover{border-color:#666;}
+.dragupload-container.active{border-color:orange !important;}
+.dragupload-container .info{display: block;text-align: center;font-size: 14px;font-weight: bold;color: #666;margin: 10px 0 30px;}
+.dragupload-container .dragupload-items{padding: 20px 0 0;}
+.dragupload-container .file{position: relative;display: block;width: 90px;padding: 5px;background: #f0f0f0;border: 1px solid #CCC;border-radius: 3px;float: left;margin: 5px;font-size: 10px;cursor: default;}
+.dragupload-container .file img{width: 100%;}
+.dragupload-container .file .size, .dragupload-container .file .type{display: inline-block;width: 50%;text-align: right;}
+.dragupload-container .file .filename{display: block;text-align: center;font-weight: bold;height: 15px;overflow: hidden;}
+.dragupload-container .file .icon{height: 65px;overflow: hidden;}
+.dragupload-container .file .status{display: block;background: #000;background-color: rgba(0,0,0,.6);width: 24px;height: 24px;font-size: 24px;position: absolute;top: 20px;left: 50%;margin-left:-18px;color: #DDD;border-radius: 50%;padding: 6px;}
+.dragupload-container .file .progress-bar{position: absolute;background: #000;background-image: linear-gradient(to top, #222,#000);top: 8px;display: block;width: 80%;height:6px;border-radius:5px;left: 10%;margin-left: -2px;border: 2px solid #333;}
+.dragupload-container .file .progress-bar .percent{position: absolute;top:0;left: 0;display: block;width:0%;background-color: #FFF;background-image: linear-gradient(to top, #CCC,#f0f0f0);height:6px;border-radius: 3px;}
+.dragupload-container .file .percent.success{background-color: #00992C;background-image: linear-gradient(to top, #004A15,#00992C);}
+.dragupload-container .file .percent.failure{background-color: #F00;background-image: linear-gradient(to top, #900,#F00);}
+.dragupload-container .file .delete, .dragupload-container .file .home{position: absolute;display: block;top: 0;right: 0;padding: 3px;background: #900;border-radius: 2px;color: #FFF;width: 13px;height: 13px;text-align: center;line-height: 14px;}
+.dragupload-container .file .delete:hover, .dragupload-container .file .home:hover{background: #f1693c;cursor: pointer;}
+.dragupload-container .file .home{color: #FFF;right: 20px;}
